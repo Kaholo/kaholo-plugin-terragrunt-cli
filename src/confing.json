@@ -1,0 +1,137 @@
+{
+    "name": "Terragrunt-CLI",
+    "type": "execr",
+    "execProgram": "node",
+    "main": "app.js",
+    "version": "1.0.0",
+    "settings": [
+      {
+        "name": "autoInit",
+        "viewName": "Auto Init",
+        "type": "boolean"
+      },
+      {
+        "name": "autoRetry",
+        "viewName": "Auto Retry",
+        "type": "boolean"
+      },
+      {
+        "name": "path",
+        "viewName": "Path",
+        "type": "string"
+      }],
+    "methods": [
+      {
+        "name":"setEnvironmentVariable",
+        "viewName":"Set environment variable",
+        "params":[
+          {
+            "name":"command",
+            "viewName":"Command",
+            "type":"string",
+            "required":true
+          }]
+      },
+      {
+        "name" : "execTerragruntInit",
+        "viewName": "Init",
+        "params": [
+          {
+            "name":"path",
+            "viewName":"Path",
+            "type":"string"
+          },
+          {
+            "name":"options",
+            "viewName":"Options",
+            "type":"boolean"
+          }]
+      },
+      {
+        "name": "execTerragruntApply",
+        "viewName": "Apply",
+        "params": [
+          {
+            "name":"path",
+            "viewName":"Path",
+            "type":"string"
+          },
+          {
+            "name":"runAll",
+            "viewName":"Run All",
+            "type":"boolean"
+          },
+          {
+            "name":"options",
+            "viewName":"Options",
+            "type":"string"
+          }
+          ]
+      },
+      {
+        "name": "execTerragruntPlan",
+        "viewName": "Plan",
+        "params": [
+          {
+            "name":"path",
+            "viewName":"Path",
+            "type":"string"
+          },
+          {
+            "name":"runAll",
+            "viewName":"Run All",
+            "type":"boolean"
+          },
+          {
+            "name":"options",
+            "viewName":"Options",
+            "type":"string"
+          }
+          ]
+      },
+      {
+        "name": "execTerragruntOutput",
+        "viewName": "Output",
+        "params": [
+          {
+            "name":"path",
+            "viewName":"Path",
+            "type":"string"
+          },
+          {
+            "name":"runAll",
+            "viewName":"Run All",
+            "type":"boolean"
+          },
+          {
+            "name":"options",
+            "viewName":"Options",
+            "type":"string"
+          }
+          ]
+      },
+      {
+        "name": "execTerragruntDestroy",
+        "viewName": "Destroy",
+        "params": [
+          {
+            "name":"path",
+            "viewName":"Path",
+            "type":"string"
+          },
+          {
+            "name":"runAll",
+            "viewName":"Run All",
+            "type":"boolean"
+          },
+          {
+            "name":"options",
+            "viewName":"Options",
+            "type":"string"
+          }
+          ]
+      }
+    ],
+    "imgUrl": "logo.png"
+  }
+  
