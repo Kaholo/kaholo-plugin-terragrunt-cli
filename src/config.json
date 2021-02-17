@@ -1,9 +1,10 @@
 {
     "name": "Terragrunt-CLI",
-    "type": "execr",
+    "type": "executer",
+    "imgUrl": "logo.png",
     "execProgram": "node",
     "main": "app.js",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "settings": [
       {
         "name": "autoInit",
@@ -21,17 +22,6 @@
         "type": "string"
       }],
     "methods": [
-      {
-        "name":"setEnvironmentVariable",
-        "viewName":"Set environment variable",
-        "params":[
-          {
-            "name":"command",
-            "viewName":"Command",
-            "type":"string",
-            "required":true
-          }]
-      },
       {
         "name" : "execTerragruntInit",
         "viewName": "Init",
@@ -131,7 +121,6 @@
           }
           ]
       }
-    ],
-    "imgUrl": "logo.png"
+    ]
   }
   
