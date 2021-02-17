@@ -26,7 +26,6 @@ function execTerragruntOutput(action, settings){
 }
 
 export default {
-	setEnvironmentVariable,
 	execTerragruntInit,
 	execTerragruntPlan,
 	execTerragruntApply,
