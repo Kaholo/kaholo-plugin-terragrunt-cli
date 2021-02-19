@@ -4,16 +4,16 @@
     "imgUrl": "logo.png",
     "execProgram": "node",
     "main": "app.js",
-    "version": "1.0.1",
+    "version": "1.2.1",
     "settings": [
       {
-        "name": "autoInit",
-        "viewName": "Auto Init",
+        "name": "noAutoInit",
+        "viewName": "No Auto Init",
         "type": "boolean"
       },
       {
-        "name": "autoRetry",
-        "viewName": "Auto Retry",
+        "name": "noAutoRetry",
+        "viewName": "No Auto Retry",
         "type": "boolean"
       },
       {
