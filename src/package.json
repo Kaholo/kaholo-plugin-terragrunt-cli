@@ -1,6 +1,6 @@
 {
     "name": "kaholo-plugin-terragrunt-cli",
-    "version": "1.0.0",
+    "version": "1.2.1",
     "description": "Kaholo plaugin for Terragrunt CLI",
     "main": "index.js",
     "scripts": {
