@@ -4,7 +4,8 @@
     "imgUrl": "logo.png",
     "execProgram": "node",
     "main": "app.js",
-    "version": "1.2.1",
+    "version": "1.2.2",
+    "description": "Terragrunt Plugin",
     "settings": [
       {
         "name": "noAutoInit",
@@ -15,35 +16,32 @@
         "name": "noAutoRetry",
         "viewName": "No Auto Retry",
         "type": "boolean"
-      },
-      {
-        "name": "path",
-        "viewName": "Path",
-        "type": "string"
-      }],
+      }
+    ],
     "methods": [
       {
         "name" : "execTerragruntInit",
         "viewName": "Init",
         "params": [
           {
-            "name":"path",
-            "viewName":"Path",
+            "name":"workingDir",
+            "viewName":"Working Directory",
             "type":"string"
           },
           {
             "name":"options",
             "viewName":"Options",
             "type":"boolean"
-          }]
+          }
+        ]
       },
       {
         "name": "execTerragruntApply",
         "viewName": "Apply",
         "params": [
           {
-            "name":"path",
-            "viewName":"Path",
+            "name":"workingDir",
+            "viewName":"Working Directory",
             "type":"string"
           },
           {
@@ -56,15 +54,15 @@
             "viewName":"Options",
             "type":"string"
           }
-          ]
+        ]
       },
       {
         "name": "execTerragruntPlan",
         "viewName": "Plan",
         "params": [
           {
-            "name":"path",
-            "viewName":"Path",
+            "name":"workingDir",
+            "viewName":"Working Directory",
             "type":"string"
           },
           {
@@ -77,36 +75,15 @@
             "viewName":"Options",
             "type":"string"
           }
-          ]
-      },
-      {
-        "name": "execTerragruntOutput",
-        "viewName": "Output",
-        "params": [
-          {
-            "name":"path",
-            "viewName":"Path",
-            "type":"string"
-          },
-          {
-            "name":"runAll",
-            "viewName":"Run All",
-            "type":"boolean"
-          },
-          {
-            "name":"options",
-            "viewName":"Options",
-            "type":"string"
-          }
-          ]
+        ]
       },
       {
         "name": "execTerragruntDestroy",
         "viewName": "Destroy",
         "params": [
           {
-            "name":"path",
-            "viewName":"Path",
+            "name":"workingDir",
+            "viewName":"Working Directory",
             "type":"string"
           },
           {
@@ -119,7 +96,7 @@
             "viewName":"Options",
             "type":"string"
           }
-          ]
+        ]
       }
     ]
   }
