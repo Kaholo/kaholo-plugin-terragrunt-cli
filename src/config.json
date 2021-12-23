@@ -4,8 +4,9 @@
     "imgUrl": "logo.png",
     "execProgram": "node",
     "main": "app.js",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "description": "Terragrunt Plugin",
+    "category": ["INFRASTRUCTURE MGMT", "CI/CD"],
     "settings": [
       {
         "name": "noAutoInit",
